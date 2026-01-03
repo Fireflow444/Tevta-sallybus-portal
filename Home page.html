@@ -41,8 +41,7 @@
 
 <!-- footer cont -->
 <footer class="ft">
-	<p class="up-dt">Update time:</p>
-	<p class="sec-num">"Section 2025-2028"</p>
+	<p class="up-dt">Update time:5:17PM.</p>
 	<a  href="https://www.youtube.com/@TEVTA-DAE" class="channel">Youtube channel</a>
 </footer>
 
@@ -72,7 +71,7 @@ body{
 	grid-area: 1/1;
 padding:10px;
 overflow: hidden;
-height: 20%;
+height: 30%;
 }
 .nav{
 	display: flex;
@@ -83,15 +82,36 @@ height: 20%;
 .web-logo{
 	widht:50px;
 	height:50px;
+animation:lg 4s ease-in-out infinite;
+}
+@keyframes lg{
+	0%{}
+	50%{transform:scale(115%);}
+	100%{transform: scale(1.0);}
 }
 
+.web-logo:hover{
+	animation-play-state: paused;
+}
 .btn-box{
 	padding:7px 15px;
 	border-radius:5px;
 	display: flex;
 	gap:30px;
 	background-color: var(--g-m-text);
+	animation:btnbx 3s ease-in infinite;
 }
+@keyframes btnbx{
+	0%{outline:1px solid #fff;}
+	25%{outline:2px solid #fff;}
+	50%{outline:3px solid #fff;}
+	75%{outline:2px solid #fff;}
+	100%{outline:1px solid #fff;}
+}
+.btn-box:hover{
+	animation-play-state: paused;
+}
+
 .btn-n{
 	font-family: arial;
 	text-decoration: none;
@@ -99,6 +119,7 @@ color: var(--b-l-text);
 }
        /*main cont*/
 .main-cont{
+	opacity: 80%;
 			grid-area: 2/1;
 	width:300px;
 	height:500px;
@@ -112,7 +133,9 @@ color: var(--b-l-text);
 	gap:10px;
 	justify-content: center;
 	align-items: center;
+    transition:0.3s ease-in-out;
 }
+.main-cont:hover{opacity:100%;}
 .main-h{
 	font-family: arial;
 	weight:800;
@@ -165,9 +188,18 @@ margin:0px 5%;
 	top:100px;
 }     
 .channel{
+	background-color: red;
 	color: var(--w-color);
-padding:3px 5px;
-border:2px solid #fff;
-border-radius: 2px;
+padding:5px 10px;
+border:2px solid #ab0909;
+border-radius: 5px;
 	text-decoration: none;
-} </style>
+	animation:ch 5s ease-in-out infinite;
+}
+@keyframes ch{
+	0%{transform: scale(1.0);}
+	50%{transform: scale(105%);}
+	100%{transform: scale(1.0);}
+
+}
+ </style>}
