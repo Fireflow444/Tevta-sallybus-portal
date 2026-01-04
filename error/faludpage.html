@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fauldpage</title>
+</head>
+<body>
+	<div class="gt-tk"><p class="gt-p">Not use on Pc screen</p></div>
+<!-- <div sytle="width:100vw;height:100vh;background-color:#333; color:;"> -->
+</body>
+</html>
+<style>
+	*{padding: 0;margin: 0;}
+		.gt-tk{
+	position: fixed;
+    width: 100vw;
+    height: 180vh;
+    background-color: #444;
+position: relative;
+z-index: 2;
+/*bottom:157vh;*/
+
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+animation:goto 5s ease-in-out infinite;
+animation-play-state: running;
+	 -webkit-text-stroke-width: 1px;
+}
+.gt-p{
+	font-size:45px;
+ font-weight: 800;
+}
+@keyframes goto{
+0%{
+    -webkit-text-stroke-color: #fff;
+  color:#fff;
+}
+50%{
+    -webkit-text-stroke-color: black;
+color:orange;
+    }
+100%{
+    -webkit-text-stroke-color: #fff;
+    color:#fff;
+}</style>
