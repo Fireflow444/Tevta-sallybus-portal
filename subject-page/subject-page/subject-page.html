@@ -24,6 +24,8 @@
 <p class="dv-nm">Developer name: Ali ahmad.</p>
 <a href="https://www.tiktok.com/@tevta3daecit0" class="tk">Tiktok.com</a>
 </footer>
+  <div class="gt-tk"><p class="gt-p">Going on the tiktok</p></div>
+
 <script>
   
     let hmbtn=document.querySelector(".hm");
@@ -44,7 +46,8 @@ setTimeout(() => {
 </script> 
 </body>
 </html>
-<style>*{
+<style>
+    *{
     padding:0;
 margin: 0;
 }
@@ -148,4 +151,33 @@ align-items: center;
     border-radius: 5px;
     text-decoration: none;
     font-family:sans-serif;
-}</style>
+}
+
+.gt-tk{
+    width: 100vw;
+    height: 100vh;
+position: relative;
+z-index: 2;
+bottom:100vh;
+left:-120vw;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+animation:goto 5s ease-in-out infinite;
+animation-play-state: running;
+}
+
+@keyframes goto{
+0%{opacity: 0;
+    background-color: #333;
+    font-size:18px;}
+50%{
+opacity: 1;
+    font-size: 25px;}
+100%{
+        background-color: #000;
+    font-size: 18px;}
+}
+</style>
