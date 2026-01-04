@@ -71,9 +71,9 @@ margin-top:20px;
 }
        /* main section */
 .main-cont{
-    width:90%;
+    width:80%;
     height:450px;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 40px;
     background-color:#555;
     border:2px solid #fff;
@@ -90,9 +90,36 @@ font-size: 1.4rem;
     color:#FFf;
     border:1px solid #fff;
 }
-.ol{
-    margin-left:25px;
-}
+  .urdu-list {
+   
+            /* This CSS property renders the list markers in Urdu numerals */
+            list-style-type: arabic-indic;
+            /* Set text direction to Right-to-Left (RTL) for correct Urdu formatting */
+            direction: rtl;
+            /* Adjust padding/margin as needed */
+            padding-right: 20px;
+        }
+        .urdu-list li {
+            /* Ensure the text within the list item is also RTL */
+            text-align: right;
+            margin-bottom: 5px;
+        }
+
+        /*unorder list*/
+  .urdu-ulist{
+   
+            /* This CSS property renders the list markers in Urdu numerals */
+            
+            /* Set text direction to Right-to-Left (RTL) for correct Urdu formatting */
+            direction: rtl;
+            /* Adjust padding/margin as needed */
+            padding-right: 20px;
+        }
+        .urdu-ulist li {
+            /* Ensure the text within the list item is also RTL */
+            text-align: right;
+            margin-bottom: 5px;
+        }
 .hd{
     color:#c3ddfa;
     width:200px;
@@ -104,18 +131,19 @@ font-size: 1.4rem;
     font-family:sans-serif;
 }
 .hd-bx{
-    width:350px;
+    width:300px;
     text-overflow: ellipsis;
 }
 
 .pr{
 width:100%;
-margin-left:10%;
-font-size: 1.1rem;
+
+font-size: 1.3rem;
 font-family: arial;
 word-spacing: 3px ;
 line-height: 25px;
 color:#fff;
+line-height: 40px;
 }
 
 
@@ -132,7 +160,7 @@ align-items: center;
 }
 .dv-nm{
     color: blue;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     font-family: math;
 }
 .tk{
