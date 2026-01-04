@@ -1,0 +1,115 @@
+*{
+    padding:0;
+margin: 0;
+}
+:root{
+--bg-color:#222;
+--b-l-text:#62C9F7;
+--b-m-text:#1E8CC1;
+--b-h-text:#16528D;
+--g-l-text:#666;
+--g-m-text:#444;
+--g-h-text:#333;
+--w-color:#fff;
+}
+body{
+    height: 100vh;
+    background-image:linear-gradient(to top ,#333 50%,#555);
+ animation:fade-in 0.5s ease-in-out;
+}
+@keyframes fade-in{   
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+         /* nav section */
+.nav{
+    height: 150px;
+    overflow:hidden;
+    display: flex;
+    justify-content:flex-start;
+    row-gap: 100px;
+    align-items: center;
+    top: 0;
+}
+.mhm{
+    color: var(--b-l-text);
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-family: sans-serif;
+margin-top:20px;
+}
+.hm{
+    margin-left: 20px;
+width: 30px;
+height:30px;
+animation:smani 2s ease-in-out infinite;
+}
+@keyframes smani{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+    margin-left:25vw;
+}
+
+       /* main section */
+.main-cont{
+    width:90%;
+    height:200px;
+    margin-left: 5%;
+    margin-top: 40px;
+    background-color:#555;
+    border:2px solid #fff;
+    border-radius:15px;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+.box{
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    align-items: center;
+    width:80%;
+    height:50px;
+    border-radius: 10px;
+    background-color: #777;
+    text-decoration: none;
+    font-family: monospace;
+   color:#c3ddfa;
+ font-size: 1.4rem;
+}
+/*footer*/
+.ft{
+    width: 90%;
+    margin-left:5%;
+    margin-top:23vh;
+   height:40px;
+   background-color: #c3ddfa;
+   border-radius: 5px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.dv-nm{
+    color: blue;
+    font-size: 0.8rem;
+    font-family: math;
+}
+.tk{
+    padding:3px 6px;
+    background-color: #000;
+    outline:2px solid #fff;
+    border:4px solid #000;
+    color: #ffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:sans-serif;
+}
