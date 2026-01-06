@@ -28,6 +28,7 @@ if (hmbtn) {
 // tiktok button
 let tkbtn = document.querySelector(".tk");
 if (tkbtn) {
+                  //event listener
   tkbtn.addEventListener("click", () => {
     let gttk = document.querySelector(".gt-tk");
     if (gttk) {
@@ -36,6 +37,11 @@ if (tkbtn) {
 
     setTimeout(() => {
       window.location.href = 'https://www.tiktok.com/@tevta3daecit0';
+   
     }, 2500);
+    setTimeout(() => {
+      gttk.style.left = "-120vw";    
+    }, 3000);
+
   });
 }
