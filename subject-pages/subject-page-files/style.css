@@ -13,7 +13,7 @@ margin: 0;
 --w-color:#fff;
 }
 body{
-    height: 100vh;
+    /*height: 100vh;*/
     background-image:linear-gradient(to top ,#333 50%,#555);
  animation:fade-in 0.5s ease-in-out;
 }
@@ -89,7 +89,7 @@ margin-top:20px;
 .ft{
     width: 90%;
     margin-left:5%;
-    margin-top:23vh;
+    margin-top:20vh;
    height:50px;
    background-color: #c3ddfa;
    border-radius: 5px;
@@ -103,10 +103,9 @@ align-items: center;
     font-family: math;
 }
 .tk{
-    padding:3px 6px;
+    padding:6px 10px;
     background-color: #000;
-    outline:1px solid ;
-    border:4px solid #000;
+    outline:1px solid #333;
     color: #ffff;
     border-radius: 5px;
     text-decoration: none;
@@ -114,8 +113,9 @@ align-items: center;
 }
 
 .gt-tk{
-    width: 100vw;
-    height: 100vh;
+    overflow: hidden;
+    width: 0vw;
+    height: 0vh;
     background-color: #444;
 position: relative;
 z-index: 2;

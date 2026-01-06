@@ -33,6 +33,8 @@ if (tkbtn) {
     let gttk = document.querySelector(".gt-tk");
     if (gttk) {
       gttk.style.left = "0px";
+      gttk.style.height = "100vh";
+      gttk.style.width = "100vw";
     }
 
     setTimeout(() => {
@@ -40,7 +42,9 @@ if (tkbtn) {
    
     }, 2500);
     setTimeout(() => {
-      gttk.style.left = "-120vw";    
+      gttk.style.left = "-120vw";
+      gttk.style.height = "0vh";
+      gttk.style.width = "0vw";    
     }, 3000);
 
   });
