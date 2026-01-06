@@ -36,6 +36,6 @@ if (tkbtn) {
 
     setTimeout(() => {
       window.location.href = 'https://www.tiktok.com/@tevta3daecit0';
-    }, 3500);
+    }, 2500);
   });
 }

@@ -112,3 +112,30 @@ align-items: center;
     text-decoration: none;
     font-family:sans-serif;
 }
+
+.gt-tk{
+    width: 100vw;
+    height: 100vh;
+    background-color: #444;
+position: relative;
+z-index: 2;
+bottom:100vh;
+left:-120vw;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+animation:goto 5s ease-in-out ;
+animation-play-state: running;
+}
+
+@keyframes goto{
+0%{opacity: 0;
+    font-size:18px;}
+50%{
+opacity: 1;
+    font-size: 25px;}
+100%{
+    font-size: 18px;}
+}
