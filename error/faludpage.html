@@ -6,33 +6,71 @@
 	<title>Fauldpage</title>
 </head>
 <body>
-	<div class="gt-tk"><p class="gt-p">Not use on Pc screen Only use on phone</p></div>
+	<div class="gt-tk">
+		<div class="al-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="www.w3.org">
+  <!-- Outer Circle -->
+  <circle cx="12" cy="12" r="10" stroke="#fc1919" stroke-width="2"/>
+  <!-- Exclamation Point -->
+  <path d="M12 7V13" stroke="#fc1919" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="12" cy="16" r="1" fill="#fc1919"/>
+</svg><p>Error:)<p></div>
+
+		<p class="gt-p">Not use on Pc or bigger screen Only use on phone</p>
+	<p class="ref">Go back and open on phone screen</p>
+	</div>
 <!-- <div sytle="width:100vw;height:100vh;background-color:#333; color:;"> -->
 </body>
 </html>
 <style>
-	*{padding: 0;margin: 0;}
+	*{
+		padding: 0;
+		margin: 0;
+	}
 		.gt-tk{
 	position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: #444;
-
-
 color: #fff;
-font-family: Arial, Helvetica, sans-serif;
 display: flex;
+flex-flow: column;
 justify-content: center;
 align-items: center;
+gap:20px;
 animation:goto 5s ease-in-out infinite;
 animation-play-state: running;
 	 -webkit-text-stroke-width: 1px;
 }
 .gt-p{
-	font-size:35px;
- font-weight: 800;
+
+position: relative;
+	/*font-size:2rem;*/
+ font-weight: 300;
+ font-family: arial;
+
 }
-@keyframes goto{
+.al-icon{
+	width: 100px;
+	display: flex;
+	align-items: center;
+gap: 20px;
+	color:#fc1919;
+}
+.al-icon p{
+	letter-spacing: 2px;
+}
+.gt-p,.al-icon{
+	width:80vw;
+	font-size:2rem;
+}
+.ref{
+	width:80vw;
+	color:#ffff00;
+	font-family:math;
+	font-size: 1.4rem;
+}
+
+/*@keyframes goto{
 0%{
     -webkit-text-stroke-color: #fff;
   color:#fff;
@@ -44,4 +82,5 @@ color:orange;
 100%{
     -webkit-text-stroke-color: #fff;
     color:#fff;
-}</style>
+}
+*/</style>
