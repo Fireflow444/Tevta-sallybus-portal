@@ -38,9 +38,9 @@ height:30px;
 animation:smani 2s ease-in-out infinite;
 }
 @keyframes smani{
-    0%{transform: scale(1);}
-    50%{transform: scale(1.1);}
-    100%{transform: scale(1);}
+    0%{transform: scale(100%);}
+    50%{transform: scale(115%);}
+    100%{transform: scale(100%);}
 }
 .mhm{
     color: var(--b-l-text);
@@ -60,25 +60,24 @@ margin-top:20px;
 
        /* main section */
 .main-cont{
-    width:90%;
+    width:85%;
     height:400px;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top: 40px;
     background-color:#555;
-    border:2px solid #fff;
+    border:2px solid #777;
     border-radius:15px;
-    /*display:flex;*/
-    /*flex-flow: column;*/
-    /*justify-content: center;*/
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
     gap:10px;
-    /*align-items: center;*/s
+    align-items: center;
 }
 .box{
-    
     padding: 5px 5px 5px 10px;
     display: flex;
     align-items: center;
-    width:80%;
+    width:70%;
     height:50px;
     border-radius: 10px;
     background-color: #777;

@@ -52,16 +52,15 @@ animation:lg 4s ease-in-out infinite;
 	padding:7px 15px;
 	border-radius:5px;
 	display: flex;
+	outline:2px solid #fff;
 	gap:30px;
 	background-color: var(--g-m-text);
-	animation:btnbx 3s ease-in infinite;
+	animation:btnbx 2s ease-in infinite;
 }
 @keyframes btnbx{
-	0%{outline:1px solid #fff;}
-	25%{outline:2px solid #fff;}
-	50%{outline:3px solid #fff;}
-	75%{outline:2px solid #fff;}
-	100%{outline:1px solid #fff;}
+	0%{outline:2px solid #222;}
+	50%{outline:2px solid #fff;}
+	100%{outline:2px solid #222;}
 }
 .btn-box:hover{
 	animation-play-state: paused;
