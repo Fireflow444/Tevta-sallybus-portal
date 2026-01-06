@@ -1,4 +1,4 @@
-let psize=document.querySelector(".body").style.offsetWidth;
+// let psize=document.querySelector(".body").style.offsetWidth;
 console.log(psize);
 const myElement = document.querySelector(".body");
 
