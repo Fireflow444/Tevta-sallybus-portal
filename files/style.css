@@ -145,7 +145,7 @@ color: var(--b-l-text);
 	font-family: monospace;
 	font-size: 0.9rem;
 	border-radius: 10px;
-    outline:2px solid var(--b-m-text);
+    outline:1px solid var(--b-m-text);
     border: none;
 margin-left: 5%;
 margin-top: 5%;
