@@ -15,9 +15,9 @@ const rectHeight = rect.height;
 
 console.log(`Offset Dimensions: ${width}px x ${height}px`);
 console.log(`ClientRect Dimensions: ${rectWidth}px x ${rectHeight}px`);
-// if(width>600){
-//    document.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/error/faludpage.html';     
-//  }
+if(width>600){
+   document.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/error/faludpage.html';     
+ }
 
 
 // // typing effect function
