@@ -4,9 +4,9 @@
 }
 :root{
 --bg-color:#222;
---b-l-text:#62C9F7;
---b-m-text:#1E8CC1;
---b-h-text:#16528D;
+--b-l-text:#ff5d26;
+--b-m-text:#cf3a08;
+--b-h-text:#c93502;
 --g-l-text:#666;
 --g-m-text:#444;
 --g-h-text:#333;
@@ -35,6 +35,7 @@ height: 10%;
 }
 
 .web-logo{
+	filter:hue-rotate(-120deg);
 	widht:50px;
 	height:50px;
 animation:lg 3s ease-in-out infinite;

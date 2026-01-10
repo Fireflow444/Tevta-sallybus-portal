@@ -40,12 +40,12 @@ if (tkbtn) {
     setTimeout(() => {
       window.location.href = 'https://www.tiktok.com/@tevta3daecit0';
    
-    }, 2500);
+    }, 3000);
     setTimeout(() => {
       gttk.style.left = "-120vw";
       gttk.style.height = "0vh";
       gttk.style.width = "0vw";    
-    }, 3000);
+    }, 3100);
 
   });
 }
