@@ -12,10 +12,10 @@ const rectHeight = rect.height;
 console.log(`Offset Dimensions: ${width}px x ${height}px`);
 console.log(`ClientRect Dimensions: ${rectWidth}px x ${rectHeight}px`);
 
-//responsive redirect
-if (window.innerWidth > 600) {
-  window.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/error/faludpage.html';
-}
+// //responsive redirect
+// if (window.innerWidth > 600) {
+//   window.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/error/faludpage.html';
+// }
 
 // home page button
 let hmbtn = document.querySelector(".hm");

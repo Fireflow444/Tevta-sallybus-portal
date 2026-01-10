@@ -266,3 +266,15 @@ color:orange;
     -webkit-text-stroke-color: #fff;
     color:#fff;
 }
+        .sign-body {
+            fill: #FFD700; /* Gold/Yellow */
+            stroke: #FFA500; /* Orange */
+            stroke-width: 5;
+        }
+        .sign-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            fill: #333; /* Dark gray for contrast */
+            text-anchor: middle;
+        }

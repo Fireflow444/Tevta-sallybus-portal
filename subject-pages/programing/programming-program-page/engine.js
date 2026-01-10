@@ -130,7 +130,6 @@ chicon1.classList.add("dowl-ani");
 let chicon2=document.getElementById("dwn2");
 console.log(chicon2);
 chicon2.classList.add("dowl-ani");
-});
 setTimeout(() => {
     console.log("hello");
     
@@ -151,5 +150,6 @@ setTimeout(() => {
     document.body.removeChild(link);
     
 }, 4000);
+});
 
 }
