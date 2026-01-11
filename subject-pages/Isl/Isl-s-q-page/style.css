@@ -120,7 +120,7 @@ font-size: 1.4rem;
     font-family:sans-serif;
 }
 .hd-bx{
-    width:300px;
+    width:95%;
     margin-right: 40px;
     position: relative;
     right: 5px;
@@ -139,7 +139,7 @@ color:#fff;
 
 
 .ft{
-    width: 80%;
+    width: 90%;
     margin-left:5%;
     margin-top:10vh;
    height:40px;
@@ -151,7 +151,7 @@ align-items: center;
 }
 .dv-nm{
     color: blue;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: math;
 }
 .tk{

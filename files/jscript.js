@@ -82,6 +82,7 @@ function rebuildParaByIndex(speed = 80) {
   const newLearnBtn = document.querySelector(".learn-btn");
 
   newLearnBtn.addEventListener("click", () => {
+    // let mainCont=document.querySelector("");
 let outbox1=document.querySelector(".info");
 let outbox2=document.querySelector(".sub-info");
 
@@ -90,6 +91,8 @@ let outbox2=document.querySelector(".sub-info");
     newLearnBtn.remove();
 outbox1.style.boxShadow="inset 0px 0px 10px var(--b-h-text)";
 outbox2.style.boxShadow="0px 0px 10px var(--b-l-text)";
+outbox1.style.height="300px";
+outbox1.style.overflow="auto";
 
       for (let i = 0; i < charArray.length; i++) {
         setTimeout(() => {
