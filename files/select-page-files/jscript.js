@@ -1,3 +1,4 @@
+
 // body size measuring
 const myElement = document.body;
 
@@ -12,10 +13,56 @@ const rectHeight = rect.height;
 console.log(`Offset Dimensions: ${width}px x ${height}px`);
 console.log(`ClientRect Dimensions: ${rectWidth}px x ${rectHeight}px`);
 
-// //responsive redirect
-// if (window.innerWidth > 600) {
+// // //responsive redirect
+// if (window.innerWidth < 850) {
+// let clock=document.querySelector(".clock-box");
+// clock.style.width="0px";
+// clock.style.height="0px";
+// clock.style.padding="0px 0px";
+// clock.style.overflow="hidden";
 //   window.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/error/faludpage.html';
 // }
+
+{
+let bkBtn=document.getElementById("back-btn");
+console.log(bkBtn);
+bkBtn.addEventListener("click",()=>{
+window.location.href="../../../Homepage.html";
+});
+
+
+}
+  // 🎯 Target date & time
+  const targetTime = new Date("2026-01-19T01:15:00");
+
+  function updateClock() {
+    const now = new Date();
+
+    // Live date & time
+    document.getElementById("liveDateTime").innerText =
+      now.toLocaleString();
+
+    // Remaining time calculation
+    let diff = targetTime - now;
+
+    if (diff <= 0) {
+      document.getElementById("remainingTime").innerText =
+        "⏰ Time Reached";
+      return;
+    }
+
+    const seconds = Math.floor(diff / 1000) % 60;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    document.getElementById("remainingTime").innerText =
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+
 
 // home page button
 let hmbtn = document.querySelector(".hm");

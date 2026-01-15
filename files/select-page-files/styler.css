@@ -1,0 +1,33 @@
+@media screen and (min-width: 850px){
+.mhm{
+font-size:2rem;
+}
+.logo{
+    width:80px;
+    height:80px;
+    /*margin-left:35vw;*/
+}
+.bodysection-1{
+    /*display: flex;*/
+width:100%;
+height:100%;
+/*overflow:hidden;*/
+/*padding:0px 0px;*/
+}
+.clock-box{
+     background: #0f172a;
+      padding: 35px 45px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(56,189,248,0.4);
+      width: 380px;
+              height: 160px;
+        flex-flow: column;
+}
+.main-cont{
+width:600px;
+margin-right: 60px;
+}
+
+
+}

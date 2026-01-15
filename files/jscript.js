@@ -1,3 +1,24 @@
+{
+ let bt=document.querySelector(".scroll-track");
+    // bt.style.transform="translateX(0px)";
+    let p=0;
+    let trn=[0,-400,-800,-400,0];
+    // while()
+    let i=0;
+function loopAds(){
+ // console.log(i)
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[1]}px)`; },4000);
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[2]}px)`; },8000);
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[3]}px)`; },12000);
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[4]}px)`; },16000);
+       setTimeout(loopAds,16000);
+       
+   
+   
+}
+   loopAds();
+ }
+
 
 {
 let psize=document.querySelector(".body").style.offsetWidth;

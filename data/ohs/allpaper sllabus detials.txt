@@ -1,0 +1,13 @@
+Subject detials:
+Isl:
+S/Q-L/Q-MCQ'S:unit 1,2 unit 2 ayat 1-10.
+Pakstudy:
+EX-S/Q-L/Q-MCQ'S:unit 1,2.
+Basic-electronics:
+S/Q:unit 1-5 full ex.
+L/Q:unit 1,2,3,5 ex.
+Mcq's:all.
+Math:unit 1,3,6.
+Ohs:.
+
+

@@ -1,0 +1,86 @@
+@media screen and (min-width: 850px){
+	.web-logo{
+		width:60px;
+		height: 60px;
+	}
+	.btn-box{
+		padding:10px 15px;
+	width:400px;
+	display: flex;
+	justify-content: space-around;
+	}
+	.body-section1{
+		gap:0px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+	}
+	.sub-info{
+		position: relative;
+		right:;
+		margin-left: 6%px;
+		width:500px;
+	}
+	.main-cont{
+		position: relative;
+		right:50px;
+		/*margin-right: -100p;*/
+		width:400px;
+margin:5% 0px;
+	}
+	.box{
+		
+		width:300px;
+	}
+.ads{
+        border-radius: 10px;
+        border:5px solid #333;
+        display: flex;
+    flex-direction: row;      /* ya column */
+    width: 400px;             /* ek box jitni width */
+    height: 400px;
+    overflow-x: hidden;         /* horizontal scroll */
+    overflow-y: hidden;
+    }
+    .ad{
+        text-align: center;
+        width:400px;
+        flex-shrink: 0;
+        height: 400px;
+        /*border:1px solid #000;*/
+        box-sizing: border-box;
+        background-color: lightcoral;
+    }
+    .scroll-track{
+    transition: 0.3s ease-in-out;
+        display: flex;
+        /*animation:scrollads 20s ease-in-out;*/
+    }
+
+.body-section2{
+	align-items: center;
+	flex-flow: row;
+}
+.fe{
+	/*form elements*/
+margin-top:20px;
+margin-right:200px;
+}
+.feedback{
+	width:250px;
+}
+
+	.ft{
+		justify-content: space-around;
+		height:40px;
+		margin:0px 0px;
+		width:100%;
+	}
+}
+@media screen and (min-width:1350px){
+	.body{
+		margin:auto;
+		width:1024px;
+		height:100%;
+	}
+}

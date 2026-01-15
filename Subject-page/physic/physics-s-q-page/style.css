@@ -73,7 +73,7 @@ margin-top:20px;
 .main-cont{
     width:90%;
     height:450px;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 40px;
     background-color:#555;
     border:2px solid #fff;
@@ -132,7 +132,7 @@ align-items: center;
 }
 .dv-nm{
     color: blue;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: math;
 }
 .tk{
