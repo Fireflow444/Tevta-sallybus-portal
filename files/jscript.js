@@ -1,3 +1,53 @@
+  // Elements Selection
+    let ratingInput = document.querySelector(".u-fed");
+    const stars = document.querySelectorAll('.star');
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            // 1. Reset stars color
+            stars.forEach(s => s.classList.remove('active'));
+
+            let starCount = 0;
+            // 2. Add active class to stars
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add('active');
+                starCount = i + 1;
+            }
+            
+            // 3. Update Username field value: star:(rating)
+            // Input field ke liye .value use karte hain
+            ratingInput.value = `star:${starCount}`;
+            ratingInput.click();
+            console.log("Current Rating:", starCount);
+        });
+    });
+      
+      const form = document.querySelector('.form1');
+      console.log(form);
+    const btn = document.querySelector('.sub-btn');
+    const inputs = form.querySelectorAll('.u-fed, .e-fed, .feedback');
+
+    // 1. Real-time check: Jab tak sab fill nahi hote button khulega nahi
+    form.addEventListener('input', () => {
+        let allFilled = true;
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
+                allFilled = false;
+            }
+        });
+        btn.style.opacit="60%";
+        btn.disabled = !allFilled; // Agar sab fill hain to disable false ho jaye
+    });
+
+    // 2. Alert Logic agar koi field miss ho (Backup check)
+    btn.addEventListener('click', (e) => {
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
+                e.preventDefault(); // Form submit hone se rokna
+                alert(`Ap ni ${input.placeholder} filll nai kia.`);
+            }
+        });
+    });
 {
  let bt=document.querySelector(".scroll-track");
     // bt.style.transform="translateX(0px)";

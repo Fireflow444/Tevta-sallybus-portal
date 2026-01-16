@@ -156,7 +156,7 @@ color:#fff;
     margin-top:20px;
 /*background-color: #ddd;*/
 }
-#back-btn{
+.back-btn{
     margin-right:20px;
     display: flex;
     justify-content: flex-end;

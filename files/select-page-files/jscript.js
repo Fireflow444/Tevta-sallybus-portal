@@ -24,7 +24,7 @@ console.log(`ClientRect Dimensions: ${rectWidth}px x ${rectHeight}px`);
 // }
 
 {
-let bkBtn=document.getElementById("back-btn");
+let bkBtn=document.querySelector(".back-btn");
 console.log(bkBtn);
 bkBtn.addEventListener("click",()=>{
 window.location.href="../../../Homepage.html";
@@ -64,13 +64,6 @@ window.location.href="../../../Homepage.html";
   setInterval(updateClock, 1000);
 
 
-// home page button
-let hmbtn = document.querySelector(".hm");
-if (hmbtn) {
-  hmbtn.addEventListener("click", () => {
-    window.location.href = 'https://fireflow444.github.io/Tevta-sallybus-portal/Homepage.html';
-  });
-}
 
 // tiktok button
 let tkbtn = document.querySelector(".tk");
