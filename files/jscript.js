@@ -52,7 +52,7 @@
  let bt=document.querySelector(".scroll-track");
     // bt.style.transform="translateX(0px)";
     let p=0;
-    let trn=[0,-400,-800,-400,0];
+    let trn=[0,-400,-800,-1200,-800,-400,0];
     // while()
     let i=0;
 function loopAds(){
@@ -61,10 +61,9 @@ function loopAds(){
     setTimeout(()=>{ bt.style.transform=`translateX(${trn[2]}px)`; },8000);
     setTimeout(()=>{ bt.style.transform=`translateX(${trn[3]}px)`; },12000);
     setTimeout(()=>{ bt.style.transform=`translateX(${trn[4]}px)`; },16000);
-       setTimeout(loopAds,16000);
-       
-   
-   
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[5]}px)`; },20000);
+    setTimeout(()=>{ bt.style.transform=`translateX(${trn[6]}px)`; },24000);
+       setTimeout(loopAds,24000);
 }
    loopAds();
  }

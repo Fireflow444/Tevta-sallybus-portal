@@ -24,12 +24,11 @@ console.log(`ClientRect Dimensions: ${rectWidth}px x ${rectHeight}px`);
 // }
 
 {
-let bkBtn=document.querySelector(".back-btn");
+let bkBtn=document.querySelector(".hm");
 console.log(bkBtn);
 bkBtn.addEventListener("click",()=>{
 window.location.href="../../../Homepage.html";
 });
-
 
 }
   // 🎯 Target date & time

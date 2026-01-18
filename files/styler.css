@@ -15,10 +15,14 @@
 		justify-content:center;
 		align-items: center;
 	}
+  .h1-web{
+    font-size:4rem;
+  }
+
 	.sub-info{
 		position: relative;
-		right:;
-		margin-left: 6%px;
+ right:20px;
+		/*margin-left: ;*/
 		width:500px;
 	}
 	.main-cont{
