@@ -32,7 +32,7 @@ window.location.href="../../../Homepage.html";
 
 }
   // 🎯 Target date & time
-  const targetTime = new Date("2026-01-19T01:15:00");
+  const targetTime = new Date("2026-01-22T01:15:00");
 
   function updateClock() {
     const now = new Date();
