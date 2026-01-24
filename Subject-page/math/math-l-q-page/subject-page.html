@@ -1,99 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="../subject-files/style.css">
- <link rel="stylesheet" href="../subject-files/styler.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tevta-11-CIT-math-L/Q</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solved Long Questions (1-4)</title>
+
+<style>
+body{
+    margin:0;
+    background:#333;
+    font-family:Arial, sans-serif;
+}
+.nav{
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background:#1a1a1a;
+}
+.logo{
+    width:90px;
+    height:auto;
+}
+.hm{
+    width:50px;
+    height:50px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+}
+.bldy{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    margin-bottom: 20px;
+}
+.box{
+    width:95%;
+    max-width: 850px;
+    background:#555;
+    padding:20px;
+    border-radius:8px;
+}
+.sq{
+    border:2px solid #777;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:6px;
+    background: #444;
+}
+.question{
+    color:#fff;
+    font-weight:bold;
+    margin-bottom:12px;
+    font-size: 1.1rem;
+}
+.solve{
+    color:#d0f0ff; 
+    background:#121c33; 
+    padding:15px;
+    border-left:3px solid #3da5d9; 
+    line-height:1.6;
+    border-radius: 2px 10px 10px 2px;
+    /*border-radius: 10px;*/
+}
+b {
+ color: #fff;
+ }
+</style>
 </head>
+
 <body>
-  <div class="body">
-  
-    <div class="sh-bdy">  
-  
-  
-      <!-- nav-bar -->
-    <div class="nav">
- <img class="logo" src="https://fireflow444.github.io/Tevta/imgs/tevta-logo.png" alt="">
+<div class="nav">
+    <img class="logo" src="https://fireflow444.github.io/Tevta/imgs/tevta-logo.png" alt="Logo">
 </div>
 
-<img class="hm" src="../../../imgs/home-btn.png" alt="">
+<img class="hm home-btn" src="../../../imgs/home-btn.png" alt="Home">
 
-<div class="svg-bx">
-    
-    <div id="back-btn-bx">
-<svg class="back-btn" width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
->
-  <!-- The outer circle (background) -->
-  <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="3")/>>
-  
-  <!-- The inner arrow (icon) -->
-  <path d="M23 26L17 20L23 14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round""")/>>
-</svg>
+<div class="bldy">
+<div class="box">
+
+<div class="sq">
+    <div class="question">1. Solve by Factorization: 1/(a + b + x) = 1/a + 1/b + 1/x</div>
+    <div class="solve">
+        <b>Step 1: Rearrange the equation</b><br>
+        Shift the term 1/x to the left side:<br>
+        1/(a + b + x) - 1/x = 1/a + 1/b<br><br>
+        
+        <b>Step 2: Take LCM on both sides</b><br>
+        Left Side: [x - (a + b + x)] / [x(a + b + x)]<br>
+        Right Side: (b + a) / ab<br><br>
+        
+        Simplify the numerator on the left:<br>
+        (x - a - b - x) / (ax + bx + x²) = (a + b) / ab<br>
+        -(a + b) / (ax + bx + x²) = (a + b) / ab<br><br>
+        
+        <b>Step 3: Simplify by dividing both sides by (a + b)</b><br>
+        -1 / (ax + bx + x²) = 1 / ab<br><br>
+        
+        <b>Step 4: Cross Multiplication</b><br>
+        -ab = x² + ax + bx<br>
+        x² + ax + bx + ab = 0<br><br>
+        
+        <b>Step 5: Factorizing by grouping</b><br>
+        x(x + a) + b(x + a) = 0<br>
+        (x + a)(x + b) = 0<br><br>
+        
+        <b>Final Answer:</b><br>
+        Either x + a = 0  =>  <b>x = -a</b><br>
+        Or x + b = 0  =>  <b>x = -b</b><br>
+        Solution Set = <b>{-a, -b}</b>
+    </div>
 </div>
 
-</div>   <!-- back btn close -->
-
-          <!--body box  -->
-<div class="bodysection-1">
-    
-
-<h1 class="mhm">L/Q:</h1>
-<!-- main section -->
-
-   <div class="hd-bx"> 
- <ol>
-        <li>Solve by Factorization: a + b + x = 1/a + 1/b + 1/c</li>
-        <li>Show roots of (x + c)² = 4ax will be equal if c = a.</li>
-        <li>Find constant in (x² − 1/x)⁴</li>
-        <li>Find Middle term of (a − b)⁷</li>
-        <li>Prove Sin 20° × Sin 40° × 3Sin 60° and Sin 80° = 3</li>
-        <li>If Sinθ = 16/9 Lies in 2nd quadrant Find Remaining Trigonometric Ratios.</li>
-        <li>Prove: (1 + Cosθ) / √(1 − Cosθ) = Cosecθ + Cotθ</li>
-        <li>If Position vector of A and B are 5i − 2j + 4k and i + 3j + 7k Find the magnitude of AB and direction cosines.</li>
-        <li>Find Sine of angle and unit if vector perpendicular to ..?</li>
-    </ol>
+<div class="sq">
+    <div class="question">2. Show roots of (x + c)² = 4ax will be equal if c = a.</div>
+    <div class="solve">
+        <b>Step 1: Simplify the equation to Standard Form</b><br>
+        Expanding $(x + c)^2$:<br>
+        $x^2 + 2xc + c^2 = 4ax$<br><br>
+        
+        Bringing all terms to the left side:<br>
+        $x^2 + 2xc - 4ax + c^2 = 0$<br>
+        Taking $x$ common from the middle terms:<br>
+        $x^2 + (2c - 4a)x + c^2 = 0$<br><br>
+        
+        <b>Step 2: Identify Coefficients</b><br>
+        Comparing with $Ax^2 + Bx + C = 0$:<br>
+        $A = 1$<br>
+        $B = (2c - 4a)$<br>
+        $C = c^2$<br><br>
+        
+        <b>Step 3: Condition for Equal Roots (Discriminant = 0)</b><br>
+        Formula: $B^2 - 4AC = 0$<br><br>
+        $(2c - 4a)^2 - 4(1)(c^2) = 0$<br>
+        $(4c^2 + 16a^2 - 16ac) - 4c^2 = 0$<br><br>
+        
+        <b>Step 4: Solve for c</b><br>
+        $4c^2 - 4c^2 + 16a^2 - 16ac = 0$<br>
+        $16a^2 - 16ac = 0$<br>
+        Taking $16a$ common:<br>
+        $16a(a - c) = 0$<br><br>
+        
+        As $16a \neq 0$, then:<br>
+        $a - c = 0$<br>
+        <b>c = a</b><br><br>
+        <b>Hence Proved.</b>
+    </div>
+</div>
+<div class="sq">
+    <div class="question">3. Find constant term in the expansion of (x² - 1/x)⁴</div>
+    <div class="solve">
+        <b>Step 1: Identify values for General Term Formula</b><br>
+        Using formula: <b>T<sub>r+1</sub> = ⁿCᵣ (a)ⁿ⁻ʳ (b)ʳ</b><br>
+        Here: n = 4, a = x², b = -1/x (or -x⁻¹)<br><br>
+        
+        <b>Step 2: Put values in the formula</b><br>
+        T<sub>r+1</sub> = ⁴Cᵣ (x²)⁴⁻ʳ (-x⁻¹)ʳ<br>
+        T<sub>r+1</sub> = ⁴Cᵣ (x⁸⁻²ʳ) (-1)ʳ (x⁻ʳ)<br>
+        Combine the powers of x:<br>
+        T<sub>r+1</sub> = ⁴Cᵣ (-1)ʳ x⁸⁻²ʳ⁻ʳ<br>
+        T<sub>r+1</sub> = ⁴Cᵣ (-1)ʳ x⁸⁻³ʳ<br><br>
+        
+        <b>Step 3: For Constant Term (Term independent of x)</b><br>
+        The power of x must be zero:<br>
+        8 - 3r = 0<br>
+        3r = 8  =>  <b>r = 8/3</b><br><br>
+        
+        <b>Note:</b> Since 'r' must be a whole number (like 0, 1, 2...), and here it is a fraction (8/3), it means <b>there is no constant term</b> in this specific expansion (n=4). <br><br>
+        
+        <i>(Tip: Agar paper mein n = 6 ho, to 12 - 3r = 0 karke r = 4 niklega, aur constant term ⁶C₄ = 15 banay gi.)</i>
+    </div>
 </div>
 
-
-<!-- closing body box -->
+<div class="sq">
+    <div class="question">4. Find Middle term of (a - b)⁷</div>
+    <div class="solve">
+        <b>Step 1: Identify n and number of terms</b><br>
+        Here n = 7 (odd power).<br>
+        Total number of terms in expansion = n + 1 = 7 + 1 = <b>8</b>.<br><br>
+        
+        <b>Step 2: Locate Middle Terms</b><br>
+        Since total terms are even (8), there are two middle terms:<br>
+        1. First Middle Term = (n + 1) / 2 = (7 + 1) / 2 = <b>4th term</b><br>
+        2. Second Middle Term = (n + 3) / 2 = (7 + 3) / 2 = <b>5th term</b><br><br>
+        
+        <b>Step 3: Calculate 4th Term (r = 3)</b><br>
+        Using formula: T<sub>r+1</sub> = ⁿCᵣ (a)ⁿ⁻ʳ (b)ʳ<br>
+        T₃₊₁ = ⁷C₃ (a)⁷⁻³ (-b)³<br>
+        T₄ = 35 (a⁴) (-b³)<br>
+        <b>T₄ = -35a⁴b³</b><br><br>
+        
+        <b>Step 4: Calculate 5th Term (r = 4)</b><br>
+        T₄₊₁ = ⁷C₄ (a)⁷⁻⁴ (-b)⁴<br>
+        T₅ = 35 (a³) (b⁴)<br>
+        <b>T₅ = 35a³b⁴</b><br><br>
+        
+        <b>Final Answer:</b> The middle terms are <b>-35a⁴b³</b> and <b>35a³b⁴</b>.
+    </div>
+</div>
+<div class="sq">
+    <div class="question">5. Prove: 16 sin 20° sin 40° sin 60° sin 80° = 3</div>
+    <div class="solve">
+        <b>Step 1: Left Hand Side (LHS)</b><br>
+        LHS = 16 sin 20° sin 40° sin 60° sin 80°<br><br>
+        
+        <b>Step 2: Put the value of sin 60°</b><br>
+        We know that <b>sin 60° = √3/2</b><br>
+        LHS = 16 × (√3/2) × [sin 20° sin 40° sin 80°]<br>
+        LHS = 8√3 [sin 20° sin 40° sin 80°]<br><br>
+        
+        <b>Step 3: Use the Identity</b><br>
+        Using formula: <b>sin θ sin(60 - θ) sin(60 + θ) = 1/4 sin 3θ</b><br>
+        Let θ = 20°, then:<br>
+        sin 20° sin(60 - 20)° sin(60 + 20)° = 1/4 sin 3(20°)<br>
+        sin 20° sin 40° sin 80° = 1/4 sin 60°<br><br>
+        
+        <b>Step 4: Substitute back into LHS</b><br>
+        LHS = 8√3 × [1/4 sin 60°]<br>
+        LHS = 2√3 × sin 60°<br>
+        LHS = 2√3 × (√3/2)<br><br>
+        
+        <b>Step 5: Final Calculation</b><br>
+        LHS = √3 × √3 = <b>3</b><br><br>
+        <b>LHS = RHS</b> (Hence Proved)
+    </div>
 </div>
 
-<!-- footer section -->
-<footer class="ft">
-<p class="dv-nm">Tevta-CIT-11-Physics-L/Q.</p>
-<p href="" class="tk">Tiktok.com</p>
-</footer>
-
-
-<!-- short web end -->
-
+<div class="sq">
+    <div class="question">6. If sin θ = 12/13 and θ lies in 2nd quadrant, find remaining Trigonometric Ratios.</div>
+    <div class="solve">
+        <b>Step 1: Identify given sides</b><br>
+        sin θ = Perpendicular / Hypotenuse = <b>12 / 13</b><br>
+        So, Perpendicular (P) = 12, Hypotenuse (H) = 13<br><br>
+        
+        <b>Step 2: Find Base (B) using Pythagoras Theorem</b><br>
+        H² = P² + B²<br>
+        13² = 12² + B²<br>
+        169 = 144 + B²<br>
+        B² = 169 - 144 = 25<br>
+        <b>Base (B) = 5</b><br><br>
+        
+        <b>Step 3: Quadrant Check (2nd Quadrant)</b><br>
+        In the 2nd quadrant, <b>only Sine and Cosecant are positive</b>. <br>
+        Cosine, Secant, Tangent, and Cotangent will be <b>negative</b>.<br>
+        Therefore, Base will be taken as <b>-5</b> for these ratios.<br><br>
+        
+        <b>Step 4: Remaining Ratios</b><br>
+        1. <b>cos θ</b> = Base / Hyp = <b>-5 / 13</b><br>
+        2. <b>tan θ</b> = Perp / Base = <b>-12 / 5</b><br>
+        3. <b>csc θ</b> = Hyp / Perp = <b>13 / 12</b><br>
+        4. <b>sec θ</b> = Hyp / Base = <b>-13 / 5</b><br>
+        5. <b>cot θ</b> = Base / Perp = <b>-5 / 12</b>
+    </div>
+</div>
+<div class="sq">
+    <div class="question">7. Prove: √[(1 + cos θ) / (1 - cos θ)] = csc θ + cot θ</div>
+    <div class="solve">
+        <b>Step 1: Start with Left Hand Side (LHS)</b><br>
+        LHS = √[(1 + cos θ) / (1 - cos θ)]<br><br>
+        
+        <b>Step 2: Rationalize the fraction inside the square root</b><br>
+        Multiply and divide by the conjugate of the denominator <b>(1 + cos θ)</b>:<br>
+        = √[ {(1 + cos θ) / (1 - cos θ)} × {(1 + cos θ) / (1 + cos θ)} ]<br><br>
+        
+        <b>Step 3: Simplify the Numerator and Denominator</b><br>
+        Numerator: (1 + cos θ)(1 + cos θ) = <b>(1 + cos θ)²</b><br>
+        Denominator: (1 - cos θ)(1 + cos θ) = 1 - cos² θ (Using a² - b² formula)<br>
+        = √[ (1 + cos θ)² / (1 - cos² θ) ]<br><br>
+        
+        <b>Step 4: Use Trigonometric Identity</b><br>
+        Since <b>1 - cos² θ = sin² θ</b>, the expression becomes:<br>
+        = √[ (1 + cos θ)² / sin² θ ]<br><br>
+        
+        <b>Step 5: Remove the Square Root</b><br>
+        Squares and square root cancel each other:<br>
+        = (1 + cos θ) / sin θ<br><br>
+        
+        <b>Step 6: Split the fraction</b><br>
+        = 1/sin θ + cos θ/sin θ<br><br>
+        
+        <b>Final Step: Apply reciprocal identities</b><br>
+        We know 1/sin θ = <b>csc θ</b> and cos θ/sin θ = <b>cot θ</b><br>
+        = <b>csc θ + cot θ</b><br><br>
+        <b>LHS = RHS</b> (Proved)
+    </div>
 </div>
 
-<!-- web end -->
+<div class="sq">
+    <div class="question">8. If Position vector of A and B are 5i − 2j + 4k and i + 3j + 7k. Find the magnitude of AB and direction cosines.</div>
+    <div class="solve">
+        <b>Step 1: Find Vector AB</b><br>
+        Formula: $\vec{AB} = \vec{OB} - \vec{OA}$ (Position Vector of B - Position Vector of A)<br>
+        $\vec{AB} = (1i + 3j + 7k) - (5i - 2j + 4k)$<br>
+        $\vec{AB} = (1-5)i + (3+2)j + (7-4)k$<br>
+        <b>$\vec{AB} = -4i + 5j + 3k$</b><br><br>
+        
+        <b>Step 2: Find Magnitude of AB ($|\vec{AB}|$)</b><br>
+        Formula: $\sqrt{x^2 + y^2 + z^2}$<br>
+        $|\vec{AB}| = \sqrt{(-4)^2 + 5^2 + 3^2}$<br>
+        $|\vec{AB}| = \sqrt{16 + 25 + 9}$<br>
+        $|\vec{AB}| = \sqrt{50}$ = <b>$5\sqrt{2}$</b><br><br>
+        
+        <b>Step 3: Find Direction Cosines (l, m, n)</b><br>
+        Formula: $l = x/|\vec{AB}|, \quad m = y/|\vec{AB}|, \quad n = z/|\vec{AB}|$<br><br>
+        $l = -4 / 5\sqrt{2}$<br>
+        $m = 5 / 5\sqrt{2} = \mathbf{1/\sqrt{2}}$<br>
+        $n = 3 / 5\sqrt{2}$<br><br>
+        <b>Direction Cosines are: $(-4/5\sqrt{2}, 1/\sqrt{2}, 3/5\sqrt{2})$</b>
+    </div>
 </div>
-  <div class="gt-tk"><p class="gt-p">Going on the tiktok</p></div>
 
+<div class="sq">
+    <div class="question">9. Find Sine of angle and unit vector perpendicular to A = 5i - 2j + 4k and B = i + 3j + 7k</div>
+    <div class="solve">
+        <b>Step 1: Find Cross Product (A × B)</b><br>
+        Using Determinant method:<br>
+        A × B = | i &nbsp;&nbsp; j &nbsp;&nbsp; k |<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 5 &nbsp;-2 &nbsp;&nbsp; 4 |<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1 &nbsp;&nbsp; 3 &nbsp;&nbsp; 7 |<br><br>
+        = i(-14 - 12) - j(35 - 4) + k(15 - (-2))<br>
+        <b>A × B = -26i - 31j + 17k</b><br><br>
+
+        <b>Step 2: Find Magnitude |A × B|</b><br>
+        |A × B| = √[(-26)² + (-31)² + (17)²]<br>
+        |A × B| = √[676 + 961 + 289] = <b>√1926 ≈ 43.88</b><br><br>
+
+        <b>Step 3: Find Sine of Angle (sin θ)</b><br>
+        Formula: sin θ = |A × B| / (|A| |B|)<br>
+        |A| = √(5² + (-2)² + 4²) = √45<br>
+        |B| = √(1² + 3² + 7²) = √59<br><br>
+        <b>sin θ = √1926 / (√45 × √59)</b><br><br>
+
+        <b>Step 4: Unit Vector Perpendicular (n̂)</b><br>
+        Formula: n̂ = (A × B) / |A × B|<br>
+        n̂ = (-26i - 31j + 17k) / √1926<br>
+        <b>n̂ = (-26/√1926)i - (31/√1926)j + (17/√1926)k</b>
+    </div>
+</div>
+
+</div>
+</div>
 <script>
-  
-    let hmbtn=document.querySelector(".hm");
-   hmbtn.addEventListener("click",()=>{ 
-       window.location.href = '../../../Homepage.html'; 
+    let btn=document.querySelector(".hm");
+    btn.addEventListener("click",()=>{
+        window.location.href="../../../Homepage.html";
     });
-
-    let tkbtn=document.querySelector(".tk");
-  
-   tkbtn.addEventListener("click",()=>{ 
-    let gttk=document.querySelector(".gt-tk");  
-gttk.style.left="0px";
-setTimeout(() => {
-    window.location.href = 'https://www.tiktok.com/@tevta3daecit0';       
-    }, 2000);
-
-  });
-
-</script>  
-   <script src="../subject-files/jscript.js"></script>
+</script>
 </body>
 </html>
