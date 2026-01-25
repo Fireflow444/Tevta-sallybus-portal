@@ -28,8 +28,12 @@
     const inputs = form.querySelectorAll('.u-fed, .e-fed, .feedback');
 
     // 1. Real-time check: Jab tak sab fill nahi hote button khulega nahi
+            btn.addEventListener("click",()=>{
+                window.location.href="./Homepage.html"
+            });
     form.addEventListener('input', () => {
         let allFilled = true;
+
         inputs.forEach(input => {
             if (input.value.trim() === "") {
                 allFilled = false;
