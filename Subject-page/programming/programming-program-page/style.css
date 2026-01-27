@@ -98,16 +98,16 @@ margin-top:20px;
 }
        /* main section */
 .main-cont{
-    overflow: auto;
-    width:85%;
-    height:500px;
-    margin-left: 5%;
+    /*overflow: auto;*/
+    /*width:85%;*/
+    /*height:500px;*/
+    /*margin-left: 5%;*/
     margin-top: 40px;
     background-color:var(--g-h-text);
     border:10px solid var(--g-h-text);
-    border-radius:15px;
-    display:flex;
-    gap:10px; 
+    /*border-radius:15px;*/
+    /*display:flex;*/
+    /*gap:10px; */
 }
 ol{
 
@@ -121,9 +121,9 @@ ol{
     display: flex;
     flex-flow: row;
     overflow: none !important;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     align-items: center;
-    margin-left:10%;
+    /*margin-left:10%;*/
 }
 .dowl-ani{
     animation:dow 3s ease-in-out infinite;

@@ -1,7 +1,27 @@
 @media screen and (min-width:1350px){
+
 	.body{
 		margin:auto;
 		width:1024px;
 		height:100%;
 	}
+}
+@media screen and (min-width:850px){
+
+	.h2{
+	font-size:1.5rem;
+	}
+	.hd-bx{
+		margin-left:2%;
+	}
+	.pr{
+		font-size:1.2rem;
+		margin-left:3%;
+	}
+	.th-bx{
+    font-size: 1.4rem;
+}
+.td-bx{
+    font-size:1rem;
+}
 }

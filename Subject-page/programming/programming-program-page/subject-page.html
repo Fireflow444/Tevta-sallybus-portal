@@ -551,35 +551,6 @@ exit:
 </div><!-- code end -->
 </div>
 
-<div class="box box12">
-    <div class="block"><h2 class="hd hh12">Binary Matrix program:</h2>
-</div>
-<div class="code code12">
-  <pre><code>
-#include&lt;iostream.h&gt;
-#include&lt;conio.h&gt;
-#include&lt;stdlib.h&gt; // system function ke liye
-
-void main(){
-clrscr();
-system("color a"); // Is se console ka text green ho jayega
-char inp;
-cout&lt;&lt;"\n\n\tIf we can see binary screen we can press 'H' :";
-cin&gt;&gt;inp;
-
-if(inp=='h'|| inp=='H'){
-for(int a=0; a&lt;10000;a++){
-cout&lt;&lt;"01010101000010101010010100101010";
-cout&lt;&lt;"0101010010000101011110001010101";
-}
-}
-else{}
-
-getch();
-}
-    </code></pre>
-</div><!-- code end -->
-</div>
 
 <div class="box box13">
     <div class="block"><h2 class="hd hh13">Selection Sort program:</h2>
@@ -981,271 +952,593 @@ a:
 </div><!-- code end -->
 </div>
 
-<div class="box box19">
-    <div class="block"><h2 class="hd hh19">Multi-Test program:</h2>
-</div>
-<div class="code code19">
-  <pre><code>
+<div class="box box20">
+    
+    <div class="block">
+        <h2 class="hd hh20">Multi Test Software:</h2>
+    </div>
+
+    <div class="code code20">
+        <pre><code>
 #include&lt;iostream.h&gt;
 #include&lt;conio.h&gt;
 #include&lt;dos.h&gt;
+
 void main(){
 restr:
-clrscr();
-
-char opt;
-cout&lt;&lt;"\n\n\t\t\t- - -Multi test software- - -";
-cout&lt;&lt;"\n\n\t\t1.Triangle.";
-cout&lt;&lt;"\n\t\t2.Data saving.";
-cout&lt;&lt;"\n\t\t3.Data searching.";
-cout&lt;&lt;"\n\t\t4.Data sort.";
-cout&lt;&lt;"\n\t\t5.Exit.";
-cout&lt;&lt;"\n\n\t\tSelect option:";
-opt=getch();
+    clrscr();
+    char opt;
+    cout&lt;&lt;"\n\n\t\t\t- - -Multi test software- - -";
+    cout&lt;&lt;"\n\n\t\t1.Triangle.";
+    cout&lt;&lt;"\n\t\t2.Data saving.";
+    cout&lt;&lt;"\n\t\t3.Data searching.";
+    cout&lt;&lt;"\n\t\t4.Data sort.";
+    cout&lt;&lt;"\n\t\t5.Exit.";
+    cout&lt;&lt;"\n\n\t\tSelect option:";
+    opt=getch();
 
     //compulsare
-delay(250);
-cout&lt;&lt;".";
-delay(250);
-cout&lt;&lt;".";
-delay(250);
-cout&lt;&lt;".";
-delay(250);
-      //not write danger
-clrscr();
-switch(opt){
+    delay(250); cout&lt;&lt;".";
+    delay(250); cout&lt;&lt;".";
+    delay(250); cout&lt;&lt;".";
+    delay(250);
 
-case '1':
-    //triangle program
-retr:
-clrscr();
-char tp;
-cout&lt;&lt;"\n\n\t\t\t- - -Triangles- - -";
-cout&lt;&lt;"\n\n\t\t1.Right triangle.";
-cout&lt;&lt;"\n\t\t2.Left triangle.";
-cout&lt;&lt;"\n\t\t3.Back.";
-cout&lt;&lt;"\n\n\t\tSelect option:";
-tp=getch();
+    clrscr();
+    switch(opt){
 
-clrscr();
-switch(tp){
+    case '1':
+        //triangle program
+        retr:
+        clrscr();
+        char tp;
+        cout&lt;&lt;"\n\n\t\t\t- - -Triangles- - -";
+        cout&lt;&lt;"\n\n\t\t1.Right triangle.";
+        cout&lt;&lt;"\n\t\t2.Left triangle.";
+        cout&lt;&lt;"\n\t\t3.Back.";
+        cout&lt;&lt;"\n\n\t\tSelect option:";
+        tp=getch();
 
-             //case 1
+        clrscr();
+        switch(tp){
+            case '1':
+                cout&lt;&lt;"\n\n\t\t\t- - -Right triangle- - -";
+                cout&lt;&lt;"\n\n\tPress enter to show triagnle:\n\n";
+                getch();
+                delay(250);
 
-case '1':
- cout&lt;&lt;"\n\n\t\t\t- - -Right triangle- - -";
-cout&lt;&lt;"\n\n\tPress enter to show triagnle:\n\n";
-getch();
-delay(250);
+                for(int i3=1;i3&lt;=10;i3++){
+                    cout&lt;&lt;"\t\t";
+                    for(int j3=i3;j3&lt;=10;j3++){ cout&lt;&lt;"  "; }
+                    for(int k3=1;k3&lt;=i3;k3++){ cout&lt;&lt;" \2"; }
+                    cout&lt;&lt;"\n";
+                }
+                getch();
+                goto retr;
 
-//row loop
-for(int i3=1;i3&lt;=10;i3++){
-cout&lt;&lt;"\t\t";
+            case '2':
+                cout&lt;&lt;"\n\n\t\t\t- - -Left triangle- - -";
+                cout&lt;&lt;"\n\n\tPress enter to show triagnle:\n\n";
+                getch();
+                delay(250);
 
+                for(int i1=1;i1&lt;=10;i1++){
+                    cout&lt;&lt;"\t\t";
+                    for(int j1=1;j1&lt;=i1;j1++){ cout&lt;&lt;" \5"; }
+                    cout&lt;&lt;"\n";
+                }
+                getch();
+                goto retr;
 
-//spaces column loop
+            case '3':
+                goto restr;
+        }
+        getch();
+        goto restr;
 
-for(int j3=i3;j3&lt;=10;j3++){
-cout&lt;&lt;"  ";
- }
+    case '2':
+        clrscr();
+        int arr1[5],key1,s1;
+        cout&lt;&lt;"\n\n\t\t\t- - -Data saving- - -\n\n";
+        for(int i1=0;i1&lt;=4;i1++){
+            cout&lt;&lt;"\nEnter your value "&lt;&lt;i1+1&lt;&lt;" :";
+            cin&gt;&gt;arr1[i1];
+        }
+        cout&lt;&lt;"\n\t\tpress any key..\n\n";
+        getch();
 
-//column loop
-for(int k3=1;k3&lt;=i3;k3++){
-cout&lt;&lt;" \2";
-}
+        for(int j1=0;j1&lt;=4;j1++){
+            cout&lt;&lt;"\n\tValue #"&lt;&lt;j1+1&lt;&lt;" = "&lt;&lt;arr1[j1];
+        }
+        getch();
+        goto restr;
 
-cout&lt;&lt;"\n";
-}
+    case '3':
+        clrscr();
+        int arr2[5];
+        int sop;
+        cout&lt;&lt;"\n\n\t\t\t- - -Data searching- - -\n\n";
+        for(int i2=0;i2&lt;=4;i2++){
+            cout&lt;&lt;"\nEnter your value "&lt;&lt;i2+1&lt;&lt;" :";
+            cin&gt;&gt;arr2[i2];
+        }
+        cout&lt;&lt;"\n\n\t\tEnter index (0-4):";
+        cin&gt;&gt;sop;
+        delay(250);
+        cout&lt;&lt;"\n\n\n\t\tYour data at index #"&lt;&lt;sop&lt;&lt;" is="&lt;&lt;arr2[sop];
+        getch();
+        goto restr;
 
-getch();
-goto retr;
+    case '4':
+        int arr3[5],key3,s3;
+        cout&lt;&lt;"\n\n\t\t\t- - -Data Sorting- - -\n\n";
+        for(int i3=0;i3&lt;=4;i3++){
+            cout&lt;&lt;"\nEnter your value "&lt;&lt;i3+1&lt;&lt;" :";
+            cin&gt;&gt;arr3[i3];
+        }
+        for(int j3=0;j3&lt;=3;j3++){
+            key3=j3;
+            for(int k3=j3+1;k3&lt;=4;k3++){
+                if(arr3[key3]&gt;arr3[k3]){
+                    s3=arr3[key3];
+                    arr3[key3]=arr3[k3];
+                    arr3[k3]=s3;
+                }
+            }
+        }
+        cout&lt;&lt;"\n\n\tValue after arranged\n";
+        for(int v3=0;v3&lt;=4;v3++){
+            cout&lt;&lt;" Value #"&lt;&lt;v3+1&lt;&lt;" ="&lt;&lt;arr3[v3]&lt;&lt;"\n";
+        }
+        getch();
+        goto restr;
 
+    case '5':
+        goto exit;
+    }
 
-
-
-           //case 2
-case '2':
-
- cout&lt;&lt;"\n\n\t\t\t- - -Left triangle- - -";
-cout&lt;&lt;"\n\n\tPress enter to show triagnle:\n\n";
-getch();
-delay(250);
-
-//row loop
-for(int i1=1;i1&lt;=10;i1++){
-cout&lt;&lt;"\t\t";
-
-//column loop
-for(int j1=1;j1&lt;=i1;j1++){
-cout&lt;&lt;" \5";
-}
-
-cout&lt;&lt;"\n";
-}
-
-getch();
-goto retr;
-
-        //case 3
-case '3':
-
-goto restr;
-
-}
-
-
-getch();
-goto restr;
-
-
-      ////case 2
-case '2':
-      //display array
-clrscr();
-int arr1[5],key1,s1;
-
-      //getting values
-cout&lt;&lt;"\n\n\t\t\t- - -Data searching- - -\n\n";
-
-    //getting
-for(int i1=0;i1&lt;=4;i1++){
-cout&lt;&lt;"\nEnter your value "&lt;&lt;i1+1&lt;&lt;" :";
-cin&gt;&gt;arr1[i1];
-}
-          //message
-     cout&lt;&lt;"\n\t\tpress any key..\n\n";
-     getch();
-
-  //display
-for(int j1=0;j1&lt;=4;j1++){
-cout&lt;&lt;"\n\tValue #"&lt;&lt;j1+1&lt;&lt;" = "&lt;&lt;arr1[j1];
-}
-getch();
-goto restr;
-
-         // comparing
-
-
-/*for(int j=0;j&lt;=3;j++){
- key=j;
-for(int k=j+1;k&lt;=4;k++){
-
-if(arr[key]&gt;arr[k]){
-s=arr[key];
-arr[key]=arr[k];
-arr[k]=s;
-}//condition
-}//inner loop
-
-}//loop
-        //telling msg out showing
-cout&lt;&lt;"\n\n\tValue after arranged\n";
-for(int v=0;v&lt;=4;v++){
-cout&lt;&lt;" Value #"&lt;&lt;v+1&lt;&lt;" ="&lt;&lt;arr[v]&lt;&lt;"\n";
-
-}*/
-
-
-    ////case 3
-case '3':
-
-//data searching
-clrscr();
-int arr2[5];
-int sop;
-      //getting values
-cout&lt;&lt;"\n\n\t\t\t- - -Data searching- - -\n\n";
-for(int i2=0;i2&lt;=4;i2++){
-cout&lt;&lt;"\nEnter your value "&lt;&lt;i2+1&lt;&lt;" :";
-cin&gt;&gt;arr2[i2];
-}
-cout&lt;&lt;"\n\n\t\tEnter which sort we use in your device \n\t\tlimit (0-4)sorts";
-cout&lt;&lt;"\n\tChouse index:";
-cin&gt;&gt;sop;
-delay(250);
-cout&lt;&lt;"\n\n\n\t\tYour data is placed on\n\t\t index #"&lt;&lt;sop&lt;&lt;" is="&lt;&lt;arr2[sop];
-getch();
-goto restr;
-
-
-
-
-
-
-case '4':
-int arr3[5],key3,s3;
-
-      //getting values
-cout&lt;&lt;"\n\n\t\t\t- - -Data searching- - -\n\n";
-
-    //getting
-for(int i3=0;i3&lt;=4;i3++){
-cout&lt;&lt;"\nEnter your value "&lt;&lt;i3+1&lt;&lt;" :";
-cin&gt;&gt;arr3[i3];
-}
-          //message
-     cout&lt;&lt;"\n\t\tpress any key..\n\n";
-     getch();
-for(int j3=0;j3&lt;=3;j3++){
- key3=j3;
-for(int k3=j3+1;k3&lt;=4;k3++){
-
-if(arr3[key3]&gt;arr3[k3]){
-s3=arr3[key3];
-arr3[key3]=arr3[k3];
-arr3[k3]=s3;
-}//condition
-}//inner loop
-
-}//loop
-        //telling msg out showing
-cout&lt;&lt;"\n\n\tValue after arranged\n";
-for(int v3=0;v3&lt;=4;v3++){
-cout&lt;&lt;" Value #"&lt;&lt;v3+1&lt;&lt;" ="&lt;&lt;arr3[v3]&lt;&lt;"\n";
-
-}
-getch();
-goto restr;
-
-
-case '5':
-goto exit;
-
-}
-
-
-
-getch();
+    getch();
 exit:
-delay(250);
-cout&lt;&lt;"\n\n\n\n\t\t\t.";
-delay(250);
-cout&lt;&lt;" . ";
-delay(250);
-cout&lt;&lt;" . ";
-delay(250);
-cout&lt;&lt;"E";
-delay(100);
-cout&lt;&lt;"X";
-delay(250);
-cout&lt;&lt;"I";
-delay(250);
-cout&lt;&lt;"T";
-delay(250);
-cout&lt;&lt;" . ";
-delay(250);
-cout&lt;&lt;" . ";
-
-delay(500);
+    cout&lt;&lt;"\n\n\n\n\t\t\t. . . E X I T . . .";
+    delay(500);
 }
-     </code></pre>
-</div><!-- code end -->
-</div>
+        </code></pre>
+    </div></div>
 
-</div>
 </div>
 
 
+<div class="box box21">
+    
+    <div class="block">
+        <h2 class="hd hh21">Utility Tools Program:</h2>
+    </div>
+
+    <div class="code code21">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int a, b, c;
+    cout&lt;&lt;"\nEnter first number:";
+    cin&gt;&gt;a;
+    cout&lt;&lt;"\nEnter second number:";
+    cin&gt;&gt;b;
+    cout&lt;&lt;"\nEnter third number:";
+    cin&gt;&gt;c;
+    
+    // Reverse Display
+    cout&lt;&lt;"\n"&lt;&lt;c;
+    cout&lt;&lt;"\n"&lt;&lt;b;
+    cout&lt;&lt;"\n"&lt;&lt;a;
+    getch();
+
+    clrscr();
+    cout&lt;&lt;"\n";
+    int a2, b2, c2;
+    cout&lt;&lt;"\nEnter first number:";
+    cin&gt;&gt;a2;
+    cout&lt;&lt;"\nEnter second number:";
+    cin&gt;&gt;b2;
+    cout&lt;&lt;"\nEnter third number:";
+    cin&gt;&gt;c2;
+    cout&lt;&lt;"\n\t\tMin:";
+
+    if(a2 &lt; b2){
+        if(a2 &lt; c2){ cout&lt;&lt;a2; }
+        else { cout&lt;&lt;c2; }
+    } 
+    else {
+        if(b2 &lt; c2){ cout&lt;&lt;b2; }
+        else { cout&lt;&lt;c2; }
+    }
+    getch();
+
+    clrscr();
+    int inp;
+    long res = 1;
+    cout&lt;&lt;"\n\nEnter factorial number:";
+    cin&gt;&gt;inp;
+    for(int i = 1; i &lt;= inp; i++){
+        res *= i;
+    }
+    cout&lt;&lt;"\nYour factorial is :"&lt;&lt;res;
+    getch();
+
+    clrscr();
+    int input;
+    cout&lt;&lt;"\n\n''Prime identifire''\n\nEnter your number:";
+    cin&gt;&gt;input;
+    // Note: Prime logic can be completed here
+    
+    getch();
+}
+        </code></pre>
+    </div></div>
+<!-- end program 21 -->
+
+
+<!-- str 22 -->
+<div class="box box22">
+    
+    <div class="block">
+        <h2 class="hd hh22">Number Nature Checker:</h2>
+    </div>
+
+    <div class="code code22">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int n;
+    cout&lt;&lt;"\n\n\tEnter a number:";
+    cin&gt;&gt;n;
+    
+    clrscr();
+    cout&lt;&lt;"\n\n\t";
+    
+    if(n &gt; 0){
+        cout&lt;&lt;"Your number is positive number.";
+    }
+    else{
+        if(n &lt; 0){
+            cout&lt;&lt;"Your number is negative.";
+        }
+        else{
+            cout&lt;&lt;"Your enter number is Zero.";
+        }
+    }
+
+    getch(); // Screen pause karne ke liye yahan getch zaroori hai
+    clrscr();
+
+    //next program
+    int stay;
+    cout&lt;&lt;"\n\n\tNext program is starting....";
+    cin&gt;&gt;stay;
+    
+    clrscr();
+    int n1, n2, n3;
+    cout&lt;&lt;"\n\n\t Enter number 1:";
+    cin&gt;&gt;n1;
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+<!--22 close  -->
+
+<!-- 23 str -->
+<div class="box box23">
+    
+    <div class="block">
+        <h2 class="hd hh23">Basic Calculator Tools:</h2>
+    </div>
+
+    <div class="code code23">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int a1, a2, sum, prod, modul;
+
+    cout&lt;&lt;"\t\nEnter your 1st number:";
+    cin&gt;&gt;a1;
+
+    cout&lt;&lt;"Enter your 2nd number:";
+    cin&gt;&gt;a2;
+
+    // Calculations
+    sum = a1 + a2;
+    prod = a1 * a2;
+    modul = a1 % a2;
+
+    clrscr();
+    cout&lt;&lt;"\n\n\t"&lt;&lt;"a+b="&lt;&lt;sum&lt;&lt;"\t a*b="&lt;&lt;prod&lt;&lt;"\ta%b="&lt;&lt;modul&lt;&lt;"\n";
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+<!-- 23 close -->
+
+
+<!--24 str  -->
+<div class="box box24">
+    
+    <div class="block">
+        <h2 class="hd hh24">Odd or Even Detector:</h2>
+    </div>
+
+    <div class="code code24">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    long num;
+    
+    cout&lt;&lt;"\n***Identifying-odd or even number***";
+    cout&lt;&lt;"\n\n\tEnter any number=";
+    cin&gt;&gt;num;
+    
+    clrscr();
+    cout&lt;&lt;"\n\n\t";
+    
+    // Check condition using modulo operator
+    if(num % 2 == 0){
+        cout&lt;&lt;num&lt;&lt;" is even number.";
+    }
+    else{
+        cout&lt;&lt;num&lt;&lt;" is odd number.";
+    }
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+<!-- 24 close -->
+
+<!-- str 25 -->
+<div class="box box25">
+    
+    <div class="block">
+        <h2 class="hd hh25">Decimal Division Tool:</h2>
+    </div>
+
+    <div class="code code25">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    float vl1, vl2, div;
+
+    cout&lt;&lt;"\n\t Enter first value:";
+    cin&gt;&gt;vl1;
+
+    cout&lt;&lt;"\n\tEnter second value:";
+    cin&gt;&gt;vl2;
+
+    // Division calculation
+    div = vl1 / vl2;
+
+    clrscr();
+    cout&lt;&lt;"\n\n\tYour Value division is:"&lt;&lt;div;
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+
+<!-- 26 str -->
+<div class="box box26">
+    
+    <div class="block">
+        <h2 class="hd hh26">Array Processor:</h2>
+    </div>
+
+    <div class="code code26">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int a[5], s = 0;
+
+    // Part 1: Sum of Array Elements
+    for(int i = 0; i &lt;= 4; i++){
+        cout&lt;&lt;"Enter your value "&lt;&lt;i+1&lt;&lt;" :";
+        cin&gt;&gt;a[i];
+        s += a[i];
+    }
+
+    cout&lt;&lt;"\t\tThe sum of values ="&lt;&lt;s;
+    getch();
+    clrscr();
+
+    // Part 2: Filtering Odd Numbers
+    cout&lt;&lt;"\n\t\t\t- - -Next program- - -";
+    int b[5], s2 = 0;
+
+    for(int j = 0; j &lt;= 4; j++){
+        cout&lt;&lt;"\nEnter your value "&lt;&lt;j+1&lt;&lt;" :";
+        cin&gt;&gt;b[j];
+        
+        // Checking if number is Odd
+        if(b[j] % 2 != 0){
+            cout&lt;&lt;b[j]&lt;&lt;"\t";
+        }
+    }
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+<!-- str 27 -->
+<div class="box box27">
+    
+    <div class="block">
+        <h2 class="hd hh27">Table & Prime program:</h2>
+    </div>
+
+    <div class="code code27">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+void main(){
+    clrscr();
+    int a = 2;
+    cout&lt;&lt;"\n\n\n\t\t\t---Table machine---";
+    delay(1000);
+
+    // Table of 2
+    for(int v = 1; v &lt;= 10; v++){
+        cout&lt;&lt;"\n\t\t"&lt;&lt;a&lt;&lt;" x "&lt;&lt;v&lt;&lt;"="&lt;&lt;a*v;
+    }
+    getch();
+    clrscr();
+
+    // Prime Number Identification
+    int n, p = 1;
+    cout&lt;&lt;"\n\n\t\t\t---Prime num machine---";
+    cout&lt;&lt;"\n\n\t\tEnter integer num:";
+    cin&gt;&gt;n;
+
+    if(n &lt;= 1){
+        p = 0;
+    }
+    else{
+        for(int i = 2; i &lt; n; i++){
+            if(n % i == 0){
+                p = 0;
+                break;
+            }
+        }
+    }
+
+    cout&lt;&lt;"\n\n\t\t\t";
+    if(p == 1){
+        cout&lt;&lt;n&lt;&lt;" is a prime number.";
+    }
+    else{
+        cout&lt;&lt;n&lt;&lt;" is not a prime number.";
+    }
+
+    getch();
+    clrscr();
+    delay(1000);
+    cout&lt;&lt;"\n\n\t\t\tNext program test...";
+    delay(500);
+    clrscr();
+    
+    cout&lt;&lt;"\n\n\t\t\t---While prime number str---";
+    cout&lt;&lt;"\n\tEnter";
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+
+
+
+<!-- 28 program  -->
+<div class="box box28">
+    
+    <div class="block">
+        <h2 class="hd hh28">Pattern (Triangles):</h2>
+    </div>
+
+    <div class="code code28">
+        <pre><code>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;dos.h&gt;
+
+void main(){
+    clrscr();
+    char o;
+    cout&lt;&lt;"\n\n\t\t\t- - -Triangle loop- - -";
+    cout&lt;&lt;"\n\n\n\t\tPress any key";
+    o=getch();
+
+    // --- Left Triangle ---
+    clrscr();
+    cout&lt;&lt;"\n\n\t\t\t- - -Left triangle- - -";
+    cout&lt;&lt;"\n\n\tPress enter to show triangle:\n\n";
+    getch();
+    delay(250);
+
+    for(int i1=1; i1&lt;=10; i1++){
+        cout&lt;&lt;"\t\t";
+        for(int j1=1; j1&lt;=i1; j1++){
+            cout&lt;&lt;" \5";
+        }
+        cout&lt;&lt;"\n";
+    }
+    getch();
+
+    // --- Mirror Triangle ---
+    clrscr();
+    cout&lt;&lt;"\n\n\t\t\t- - -Mirror triangle- - -";
+    cout&lt;&lt;"\n\n\tPress enter to show triangle:\n\n";
+    getch();
+    delay(250);
+
+    for(int i2=1; i2&lt;=10; i2++){
+        cout&lt;&lt;"\t\t";
+        for(int j2=i2; j2&lt;=10; j2++){
+            cout&lt;&lt;" \5";
+        }
+        cout&lt;&lt;"\n";
+    }
+    getch();
+
+    // --- Right Triangle ---
+    clrscr();
+    cout&lt;&lt;"\n\n\t\t\t- - -Right triangle- - -";
+    cout&lt;&lt;"\n\n\tPress enter to show triangle:\n\n";
+    getch();
+    delay(250);
+
+    for(int i3=1; i3&lt;=10; i3++){
+        cout&lt;&lt;"\t\t";
+        for(int j3=i3; j3&lt;=10; j3++){ cout&lt;&lt;"  "; }
+        for(int k3=1; k3&lt;=i3; k3++){ cout&lt;&lt;" \2"; }
+        cout&lt;&lt;"\n";
+    }
+    getch();
+
+    // --- Mirror Right Triangle ---
+    clrscr();
+    cout&lt;&lt;"\n\n\t\t\t- - -Mirror_right triangle- - -";
+    cout&lt;&lt;"\n\n\tPress enter to show triangle:\n\n";
+    getch();
+    delay(250);
+
+    for(int i4=1; i4&lt;=10; i4++){
+        cout&lt;&lt;"\t\t";
+        for(int j4=1; j4&lt;=i4; j4++){ cout&lt;&lt;"  "; }
+        for(int k4=i4; k4&lt;=10; k4++){ cout&lt;&lt;" \2"; }
+        cout&lt;&lt;"\n";
+    }
+
+    getch();
+}
+        </code></pre>
+    </div></div>
+</div>
+</div>
 <!-- footer section -->
 <footer class="ft">
 <p class="dv-nm">Tevta-CIT-11-Physics-MCQ's.</p>

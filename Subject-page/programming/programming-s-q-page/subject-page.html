@@ -43,29 +43,161 @@
 <!-- main section -->
 
    <div class="hd-bx"> 
-
-<ol>
-        <li>What is a program?</li>
-        <li>What is a programming language?</li>
-        <li>Difference between High/Low level language?</li>
-        <li>Difference between Assembling and Machine language? (Mnemonic)</li>
-        <li>What is a language translator / processor?</li>
-        <li>Difference between Compiler and Interpreter? [Source Code] —&gt; (Compiler) —&gt; [Object Code]</li>
-        <li>Difference between Source &amp; Object code? (As whole) [Source Code] —&gt; (Single Instruction) —&gt; [Interpreter] —&gt; [M.L] —&gt; [Execute]</li>
-        <li>What is an Assembler?</li>
-        <li>What is a data type? (a) Integer (1, 2, 3, 4) (b) Float (1.2, 2.4, 5.2, 2.2) (c) Character ('a', 'b', 'c')</li>
-        <li>Sub-types of data-types?</li>
-        <li>Range of data-types?</li>
-        <li>Memory and sign + keyword of data types?</li>
-        <li>What is a bug? + Types</li>
-        <li>What is debugging?</li>
-        <li>What is syntax?</li>
-        <li>What is Syntax Error?</li>
-        <li>What is Logical Error?</li>
-        <li>What is Runtime Error? (Common)</li>
-    </ol>
+<div id="q1">
+    <h2 class="h2">1. What is a program?</h2>
+    <p class="pr">Ans: A set of specific instructions that tells a computer exactly how to perform a particular task.</p>
 </div>
 
+<div id="q2">
+    <h2 class="h2">2. What is a programming language?</h2>
+    <p class="pr">Ans: A formal set of rules used by programmers to write instructions for computers.</p>
+</div>
+
+<div id="q3">
+    <h2 class="h2">3. Difference between High and Low-level language?</h2>
+    <p class="pr">Ans: High-level is human-readable, low-level is machine-oriented and directly controls hardware.</p>
+</div>
+
+<div id="q4">
+    <h2 class="h2">4. Difference between Assembly and Machine language?</h2>
+    <p class="pr">Ans: Machine language uses binary (0s and 1s); Assembly uses human-readable mnemonics to represent those instructions.</p>
+</div>
+
+<div id="q5">
+    <h2 class="h2">5. What is a language translator / processor?</h2>
+    <p class="pr">Ans: A software tool that converts human-written source code into machine-readable instructions for the computer.</p>
+</div>
+
+<div id="q6">
+    <h2 class="h2">6. Difference between Compiler and Interpreter?</h2>
+    <p class="pr">Ans: A compiler translates program at once and interpreter translates and executes it line-by-line.</p>
+</div>
+
+<div id="q7">
+    <h2 class="h2">7. Difference between Source & Object code?</h2>
+    <p class="pr">Ans: Source code is the original human-written text and object code is the translated machine-readable version.</p>
+</div>
+
+<div id="q8">
+    <h2 class="h2">8. What is an Assembler?</h2>
+    <p class="pr">Ans: A specific translator that converts assembly language into binary machine code.</p>
+</div>
+
+<div id="q9">
+    <h2 class="h2">9. What is a data type?</h2>
+    <p class="pr">Ans: A classification that tells the compiler what kind of data can store and process.</p>
+</div>
+
+<div id="q10">
+    <h2 class="h2">10. Sub-types of data-types?</h2>
+    <p class="pr">Ans: Commonly divided into basic:</p>
+    <p class="pr">1. Int.</p>
+    <p class="pr">2. Char.</p>
+    <p class="pr">3. Float.</p>
+    <p class="pr">4. Arrays.</p>
+    <p class="pr">5. Pointers.</p>
+    <p class="pr">6. Structures.</p>
+</div>
+
+<div id="q11">
+    <h2 class="h2">11. Range of data-types?</h2>
+    <p class="pr">Ans: The specific mathematical minimum and maximum values a data type can store in memory.</p>
+</div>
+
+<h2 class="h2">12. Memory, signs, and keywords?</h2>
+    <p class="pr">Ans:</p>
+    <table>
+        <thead>
+            <tr>
+                <th class="th-bx">Data Type Name</th>
+                <th class="th-bx">Keyword</th>
+                <th class="th-bx">Size (Bytes)</th>
+                <th class="th-bx">Range / Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td-bx">Integer</td>
+                <td class="td-bx">int</td>
+                <td class="td-bx">4 Bytes</td>
+                <td class="td-bx">Whole numbers (e.g., 10, -5)</td>
+            </tr>
+            <tr>
+                <td class="td-bx">Character</td>
+                <td class="td-bx">char</td>
+                <td class="td-bx">1 Byte</td>
+                <td class="td-bx">Single symbols (e.g., 'A', '$')</td>
+            </tr>
+            <tr>
+                <td class="td-bx">Floating Point</td>
+                <td class="td-bx">float</td>
+                <td class="td-bx">4 Bytes</td>
+                <td class="td-bx">Decimal numbers (6-7 digits)</td>
+            </tr>
+            <tr>
+                <td class="td-bx">Double Floating</td>
+                <td class="td-bx">double</td>
+                <td class="td-bx">8 Bytes</td>
+                <td class="td-bx">Large decimals (15 digits)</td>
+            </tr>
+            <tr>
+                <td class="td-bx">Boolean</td>
+                <td class="td-bx">bool</td>
+                <td class="td-bx">1 Byte</td>
+                <td class="td-bx">True or False values</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<div id="q13">
+    <h2 class="h2">13. What is a bug+ Types?</h2>
+    <p class="pr">Ans: An error in a program is called bug. Main types are Syntax, Logical, and Runtime errors.</p>
+</div>
+
+<div id="q14">
+    <h2 class="h2">14. What is debugging?</h2>
+    <p class="pr">Ans: The process of analysing, finding, fixing errors in a program is called debugging.</p>
+</div>
+
+<div id="q15">
+    <h2 class="h2">15. What is syntax?</h2>
+    <p class="pr">Ans: The set of formal rules or structure and sequence of statements in a programming language.</p>
+</div>
+
+<div id="q16">
+    <h2 class="h2">16. What is Syntax Error?</h2>
+    <p class="pr">Ans: Against the language grammatical rules, which prevents the code from compiling is called syntax error.</p>
+</div>
+
+<div id="q17">
+    <h2 class="h2">17. What is Logical Error?</h2>
+    <p class="pr">Ans: A mistake in the program's logic that cause the incorrect result even program is running.</p>
+</div>
+
+<div id="q18">
+    <h2 class="h2">18. What is Runtime Error?</h2>
+    <p class="pr">Ans: An error occurring during execution caused by perform illegal operations like dividing by zero.</p>
+</div>
+
+<div id="q19">
+    <h2 class="h2">19. What is variable?</h2>
+    <p class="pr">Ans: A named memory location used to store data values that can change during program execution.</p>
+</div>
+
+<div id="q20">
+    <h2 class="h2">20. Rule for naming a variable?</h2>
+    <p class="pr">Ans: Variable name start with a letter or underscore, cannot contain spaces, and shouldn't be a keyword.</p>
+</div>
+
+<div id="q22">
+    <h2 class="h2">22. What is keywords?</h2>
+    <p class="pr">Ans: Reserved words with predefined meanings that the compiler understands through the language's is called keyword.</p>
+</div>
+
+<!-- long question -->
+
+</div>
 
 <!-- closing body box -->
 </div>
