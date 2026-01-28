@@ -66,25 +66,25 @@ window.location.href="../../../Homepage.html";
 
 // tiktok button
 let tkbtn = document.querySelector(".tk");
-if (tkbtn) {
-                  //event listener
+// if (tkbtn) {
+//                   //event listener
   tkbtn.addEventListener("click", () => {
-    let gttk = document.querySelector(".gt-tk");
-    if (gttk) {
-      gttk.style.left = "0px";
-      gttk.style.height = "100vh";
-      gttk.style.width = "100vw";
-    }
-
-    setTimeout(() => {
       window.location.href = 'https://www.tiktok.com/@tevta3daecit0';
+    
+  //   let gttk = document.querySelector(".gt-tk");
+  //   if (gttk) {
+  //     gttk.style.left = "0px";
+  //     gttk.style.height = "100vh";
+  //     gttk.style.width = "100vw";
+
+  //   // setTimeout(() => {
    
-    }, 3000);
-    setTimeout(() => {
-      gttk.style.left = "-120vw";
-      gttk.style.height = "0vh";
-      gttk.style.width = "0vw";    
-    }, 3100);
+    // // }, 3000);
+    // setTimeout(() => {
+    //   gttk.style.left = "-120vw";
+    //   gttk.style.height = "0vh";
+    //   gttk.style.width = "0vw";    
+    // }, 3100);
 
   });
-}
+// }

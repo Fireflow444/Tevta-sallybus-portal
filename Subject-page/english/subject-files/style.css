@@ -103,6 +103,12 @@ font-size: 1.4rem;
     color:#FFf;
     border:1px solid #fff;
 }
+.th-bx{
+    font-size: 0.8rem;
+}
+.td-bx{
+    font-size:0.6rem;
+}
 ul{
     color:var(--w-color);
     margin-left:25px;
@@ -128,7 +134,15 @@ ul{
     width:80%;
     text-overflow: ellipsis;
 }
-
+.pon{
+    color:#fad778;
+}
+.h2{
+font-size: 1rem;
+    margin:20px 10px 5px;
+    font-family: sans-serif;
+ color:var(--b-m-text);   
+}
 .pr{
 /*width:100%;*/
 margin-left:10%;
